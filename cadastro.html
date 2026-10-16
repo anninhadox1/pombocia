@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pombocia - Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TELA DE CARREGAMENTO POMBOCIA -->
+<div id="tela-carregamento">
+
+    <img
+        src="./img/logo.png"
+        alt="Pombocia"
+        class="logo-loading"
+    >
+
+    <h2>Preparando seu voo...</h2>
+
+    <div class="barra-loading">
+        <div class="progresso-loading"></div>
+    </div>
+
+    <p>Bem-vindo à Pombocia!</p>
+
+</div>
+
+<main class="celular">
+
+    <section class="pagina pagina-cadastro">
+
+        <!-- LOGO E VOLTAR -->
+        <header class="cabecalho-cadastro">
+
+            <img src="./img/logo.png"
+                 alt="Pombocia"
+                 class="logo-cadastro">
+
+            <a href="index.html" class="voltar-cadastro">
+                voltar
+            </a>
+
+        </header>
+
+        <!-- MENSAGEM -->
+        <div class="boas-vindas">
+            inicie sua jornada com a pombocia aqui!
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <form class="formulario-cadastro"
+              id="formCadastro">
+
+            <input type="text"
+                   id="nome"
+                   placeholder="insira seu nome"
+                   required>
+
+            <input type="password"
+                   id="senha"
+                   placeholder="insira sua senha"
+                   minlength="6"
+                   required>
+
+            <input type="password"
+                   id="confirmar"
+                   placeholder="confirme a senha"
+                   minlength="6"
+                   required>
+
+            <button type="submit" class="botao-cadastrar">
+                cadastrar
+            </button>
+
+        </form>
+
+        <!-- POMBO DECORATIVO -->
+        <img src="./img/pombo decoracao.png"
+             alt="Pombo Pombocia"
+             class="pombo-cadastro">
+
+    </section>
+
+</main>
+
+<script>
+    document.getElementById("formCadastro")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const senha =
+                document.getElementById("senha").value;
+
+            const confirmar =
+                document.getElementById("confirmar").value;
+
+            if (senha !== confirmar) {
+                alert("As senhas não coincidem!");
+                return;
+            }
+
+            window.location.href = "concluido.html";
+        });
+</script>
+<script src="transicao.js"></script>
+<script src="loading.js"></script>
+</body>
+</html>

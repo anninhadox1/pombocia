@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+<link rel="icon" type="image/png" href="./img/logo.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pombocia - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- TELA DE CARREGAMENTO POMBOCIA -->
+<div id="tela-carregamento">
+
+    <img
+        src="./img/logo.png"
+        alt="Pombocia"
+        class="logo-loading"
+    >
+
+    <h2>Preparando seu voo...</h2>
+
+    <div class="barra-loading">
+        <div class="progresso-loading"></div>
+    </div>
+
+    <p>Bem-vindo à Pombocia!</p>
+
+</div>
+
+
+<div class="pombo-voando">
+    <img src="./img/pombo_voando.gif" alt="Pombo voando">
+</div>
+
+    <main class="celular">
+        <section class="pagina ativa" id="inicio">
+
+            <img src="./img/logo.png"
+                 alt="Pombocia"
+                 class="logo">
+
+           <div class="botoes">
+    <a href="novidades.html">
+        <img src="./img/Botão_Neon_NOVIDADES_com_Megafone-removebg-preview.png" class="botao-img">
+    </a>
+
+    <a href="cadastro.html">
+        <img src="./img/Botão_de_Cadastro_Futurista_em_Vermelho_e_Preto-removebg-preview.png" class="botao-img">
+    </a>
+
+    <a href="curiosidades.html">
+        <img src="./img/Curiosidades_Eletrônicas_em_3D-removebg-preview.png" class="botao-img">
+    </a>
+
+    <a href="endereco.html">
+        <img src="./img/Botão_Futurista_de_Endereço_em_Vermelho_e_Cromo-removebg-preview.png" class="botao-img">
+    </a>
+</div>
+<img src="./img/Pombo_fofo_com_asas_abertas_e_corações-removebg-preview.png"
+
+class="pombo-flutuante"
+alt="Mascote Pombocia">
+
+<div id="fala-pombo" class="fala-pombo">
+  Oiii! Bem-vindo à Pombocia! 💗
+</div>
+
+        </section>|
+    </main>
+<script src="transicao.js"></script>
+<script src="loading.js"></script>
+
+
+
+
+<script>
+const pombo = document.querySelector(".pombo-flutuante");
+const balao = document.getElementById("fala-pombo");
+
+const frases = [
+  "Oiii! Bem-vindo à Pombocia! 💗",
+  "Você já viu nossas curiosidades? 🐦",
+  "Sabia que a tecnologia está em tudo?",
+  "Eu sou o mascote mais fofo daqui! 💕",
+  "Continue explorando nosso site! ✨",
+  "Pru pru! Eu adoro visitantes! 🐦"
+];
+
+let numeroFrase = 0;
+
+if (pombo && balao) {
+  pombo.addEventListener("click", function() {
+    balao.style.display = "block";
+    balao.textContent = frases[numeroFrase];
+
+clearTimeout(window.tempoPombo);
+
+window.tempoPombo = setTimeout(function() {
+  balao.style.display = "none";
+}, 10000);
+
+    numeroFrase = (numeroFrase + 1) % frases.length;
+  });
+}
+</script>
+
+</body>
+</html>
+

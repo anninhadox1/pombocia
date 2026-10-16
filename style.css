@@ -1,0 +1,1137 @@
+
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101b37;
+    color: white;
+}
+
+/* TELA DO IPHONE 16 */
+.celular {
+    width: 100%;
+    max-width: 393px;
+    min-height: 100dvh;
+    margin: 0 auto;
+    background: linear-gradient(
+        180deg,
+        #aad0f7 0%,
+        #0a5cb9 50%,
+        #0b244b 100%
+    );
+    overflow: hidden;
+}
+
+/* ESTRUTURA DAS PÁGINAS */
+.pagina {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* LOGO */
+.logo {
+    width: 210px;
+    max-width: 90%;
+    height: auto;
+    margin-top: 85px;
+    margin-bottom: 45px;
+    object-fit: contain;
+}
+
+/* BOTÕES DA PÁGINA INICIAL */
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.botao {
+    width: 100%;
+    min-height: 65px;
+    padding: 12px;
+    border: 3px solid #080808;
+    border-radius: 15px;
+    background-color: #aa202a;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 5px 6px 0 #080d1d;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #c02b35;
+}
+
+/* TÍTULOS DAS OUTRAS PÁGINAS */
+.titulo {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 50px 0 25px;
+    text-shadow: 2px 3px 3px black;
+}
+
+/* IMAGENS */
+.imagem {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    object-fit: contain;
+    margin: 20px auto;
+}
+
+/* CAIXAS DE TEXTO */
+.caixa {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.caixa h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.caixa p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* BOTÃO VOLTAR */
+.voltar {
+    align-self: flex-start;
+    background-color: #aa202a;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FORMULÁRIO */
+.formulario {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.campo {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo input {
+    width: 100%;
+    height: 52px;
+    padding: 12px;
+    border: 3px solid black;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+/* CADASTRO CONCLUÍDO */
+.sucesso {
+    width: 100%;
+    margin: auto 0;
+}
+
+.sucesso h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sucesso p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* VISUALIZAÇÃO NO COMPUTADOR */
+@media (min-width: 500px) {
+    body {
+        padding: 20px;
+    }
+
+    .celular {
+        min-height: 852px;
+        border: 6px solid black;
+        border-radius: 35px;
+    }
+
+    .pagina {
+        min-height: 840px;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101b37;
+}
+
+.celular {
+    width: 100%;
+    max-width: 393px;
+    min-height: 100dvh;
+    margin: 0 auto;
+
+    /* FUNDO ORIGINAL DO FIGMA */
+    background-image: url("./img/imagem\ fundo\ azul.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pagina {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* BOTÕES EM IMAGEM DO FIGMA */
+
+.botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.botoes a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.botao-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.botoes a {
+    display: block;
+    width: 100%;
+}
+
+.botao-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ===== PÁGINA NOVIDADES ===== */
+
+.novidades {
+    position: relative;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+/* BOTÃO VOLTAR */
+.voltar-img {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 65px;
+}
+
+.voltar-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TÍTULO */
+.titulo-novidades {
+    margin-top: 85px;
+    margin-bottom: 30px;
+    font-size: 29px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* IMAGEM PRINCIPAL */
+.imagem-novidades {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+/* TEXTO */
+.texto-novidades {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.texto-novidades h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.texto-novidades p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* BOTÃO VOLTAR */
+
+.voltar-img {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #aa202a;
+    color: white;
+
+    padding: 10px 18px;
+    border: 2px solid black;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.pagina-novidades {
+    padding: 0 12px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111;
+}
+
+/* CABEÇALHO */
+.cabecalho-novidades {
+    width: 100%;
+    height: 185px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+/* LOGO PEQUENO */
+.logo-novidades {
+    width: 135px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* BOTÃO PRETO VOLTAR */
+.voltar-novidades {
+    background: #242424;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px 23px;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+/* FOTO GRANDE */
+.foto-novidades {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    margin: 0 auto 35px;
+}
+
+/* QUADRO BRANCO */
+.noticia-novidades {
+    width: 96%;
+    background: rgba(255, 255, 255, 0.87);
+    color: #111;
+    border-radius: 8px;
+    padding: 17px 15px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+/* PARÁGRAFOS */
+.noticia-novidades p {
+    margin-bottom: 8px;
+}
+
+.noticia-novidades p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== PÁGINA CURIOSIDADES ===== */
+
+.pagina-curiosidades {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 0 12px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CABEÇALHO */
+.cabecalho-curiosidades {
+    width: 100%;
+    height: 175px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+/* LOGO */
+.logo-curiosidades {
+    width: 135px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* BOTÃO VOLTAR */
+.voltar-curiosidades {
+    background: #242424;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 23px;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+/* TEXTO */
+.texto-curiosidades {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 15px;
+    border-radius: 8px;
+    color: #111;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+.texto-curiosidades h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.texto-curiosidades p {
+    margin-bottom: 10px;
+}
+
+/* IMAGEM INFERIOR */
+.foto-curiosidades {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+/* ===== CADASTRO POMBOCIA ===== */
+
+.pagina-cadastro {
+    min-height: 100dvh;
+    padding: 0 15px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111;
+}
+
+/* CABEÇALHO */
+.cabecalho-cadastro {
+    width: 100%;
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+/* LOGO */
+.logo-cadastro {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* VOLTAR */
+.voltar-cadastro {
+    background-color: #242424;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* BOAS-VINDAS */
+.boas-vindas {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* FORMULÁRIO */
+.formulario-cadastro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.formulario-cadastro input {
+    width: 75%;
+    height: 42px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    border-radius: 2px;
+    color: #111;
+    font-size: 15px;
+    text-align: center;
+}
+
+.formulario-cadastro input::placeholder {
+    color: #888;
+}
+
+/* BOTÃO CADASTRAR */
+.botao-cadastrar {
+    width: 75%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 4px;
+    color: #222;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* POMBO */
+.pombo-cadastro {
+    width: 220px;
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+/* ===== CADASTRO POMBOCIA ===== */
+
+.pagina-cadastro {
+    min-height: 100dvh;
+    padding: 0 15px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111;
+}
+
+.cabecalho-cadastro {
+    width: 100%;
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.logo-cadastro {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+}
+
+.voltar-cadastro {
+    background-color: #242424;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.boas-vindas {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.formulario-cadastro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.formulario-cadastro input {
+    width: 75%;
+    height: 42px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    border-radius: 2px;
+    color: #111;
+    font-size: 15px;
+    text-align: center;
+}
+
+.formulario-cadastro input::placeholder {
+    color: #888;
+}
+
+.botao-cadastrar {
+    width: 75%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 4px;
+    color: #222;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pombo-cadastro {
+    width: 220px;
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+/* ===== CADASTRO CONCLUÍDO ===== */
+
+.pagina-concluido {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 35px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111;
+}
+
+/* MENSAGEM SUPERIOR */
+.titulo-concluido {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    color: #111;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 5px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+/* IMAGEM DOURADA DO FIGMA */
+.imagem-concluido {
+    width: 100%;
+    max-width: 365px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* VOLTAR AO INÍCIO */
+.voltar-inicio {
+    display: block;
+    margin-top: 35px;
+    padding: 12px 25px;
+    background: #242424;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* EFEITO DE ENTRADA SUAVE */
+
+.pagina {
+    animation: aparecer 1.5s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== PÁGINA ENDEREÇO ===== */
+
+.pagina-endereco {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 0 15px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CABEÇALHO */
+.cabecalho-endereco {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+/* LOGO */
+.logo-endereco {
+    width: 135px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* BOTÃO VOLTAR */
+.voltar-endereco {
+    background-color: #242424;
+    color: white;
+    text-decoration: none;
+    padding: 8px 23px;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* TÍTULO */
+.titulo-endereco {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* IMAGEM */
+.foto-endereco {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* CAIXAS DE INFORMAÇÕES */
+.informacao-endereco {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.88);
+    color: #111;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.informacao-endereco h2 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.informacao-endereco p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ANIMAÇÃO DO POMBO VOANDO */
+
+.pombo-voando {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 100px;
+    z-index: 1000;
+    pointer-events: none;
+
+    animation: vooPombo 8s linear infinite;
+}
+
+.pombo-voando img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    animation: baterAsas 0.5s ease-in-out infinite alternate;
+}
+
+/* POMBO ATRAVESSANDO A TELA */
+@keyframes vooPombo {
+    0% {
+        transform: translateX(-120px) translateY(20px);
+    }
+
+    50% {
+        transform: translateX(50vw) translateY(-40px);
+    }
+
+    100% {
+        transform: translateX(110vw) translateY(10px);
+    }
+}
+
+/* MOVIMENTO SUAVE */
+@keyframes baterAsas {
+    from {
+        transform: rotate(-8deg) translateY(-5px);
+    }
+
+    to {
+        transform: rotate(8deg) translateY(5px);
+    }
+}
+
+/* TRANSIÇÃO SUAVE ENTRE PÁGINAS */
+
+body {
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+body.saindo {
+    opacity: 0;
+}
+
+/* ENTRADA DA NOVA PÁGINA */
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pagina {
+    animation: entradaSuave 1.2s ease-out;
+}
+
+/* ACESSIBILIDADE */
+@media (prefers-reduced-motion: reduce) {
+    body {
+        transition: none;
+    }
+
+    .pagina {
+        animation: none;
+    }
+}
+
+
+/* ===== TELA DE CARREGAMENTO POMBOCIA ===== */
+
+#tela-carregamento {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+
+    background: #102e59;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 99999;
+    gap: 18px;
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease,
+                visibility 0.8s ease;
+}
+
+/* QUANDO TERMINAR */
+#tela-carregamento.esconder {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* LOGO ANIMADO */
+.logo-loading {
+    width: 190px;
+    max-width: 75%;
+    height: auto;
+
+    animation: flutuarLogo 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutuarLogo {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+/* TEXTO */
+#tela-carregamento h2 {
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#tela-carregamento p {
+    color: #dbe8ff;
+    font-size: 14px;
+}
+
+/* BARRA DE CARREGAMENTO */
+.barra-loading {
+    width: 210px;
+    height: 9px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* PROGRESSO */
+.progresso-loading {
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+
+    animation: carregarBarra 2.2s ease-in-out forwards;
+}
+
+@keyframes carregarBarra {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.pombo-flutuante {
+  position: fixed;
+  width: 110px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  pointer-events: none;
+  animation: pomboVoando 3s ease-in-out infinite;
+}
+
+@keyframes pomboVoando {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(5deg);
+  }
+}
+
+/* BALÃO DO POMBINHO */
+
+.fala-pombo {
+  position: fixed;
+  bottom: 150px;
+  right: 35px;
+
+  background: white;
+  color: #b83258;
+
+  padding: 18px 22px;
+  border-radius: 20px;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+
+  box-shadow: 0 5px 25px #0003;
+
+  max-width: 220px;
+  z-index: 1000;
+
+  display: none;
+  animation: aparecerFala 0.4s ease;
+}
+
+@keyframes aparecerFala {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PERMITIR CLICAR NO POMBO */
+
+.pombo-flutuante {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* POMBO DENTRO DA TELA DO CELULAR */
+
+.pombo-flutuante {
+  position: fixed !important;
+  bottom: 25px !important;
+  left: 390px !important;
+  right: auto !important;
+  top: auto !important;
+
+  width: 75px !important;
+  z-index: 9999;
+}
+
+/* BALÃO DENTRO DO CELULAR */
+
+.fala-pombo {
+  position: fixed !important;
+  bottom: 120px !important;
+  left: 260px !important;
+  right: auto !important;
+  top: auto !important;
+
+  max-width: 180px;
+  font-size: 12px;
+}
+
+/* CELULAR COMO REFERÊNCIA */
+
+.celular {
+  position: relative;
+}
+
+/* POMBO DENTRO DO CELULAR */
+
+.celular .pombo-flutuante {
+  position: absolute !important;
+  bottom: 15px !important;
+  right: 10px !important;
+  left: auto !important;
+  top: auto !important;
+  width: 75px !important;
+  z-index: 9999;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* BALÃO DENTRO DO CELULAR */
+
+.celular .fala-pombo {
+  position: absolute !important;
+  bottom: 105px !important;
+  right: 10px !important;
+  left: auto !important;
+  top: auto !important;
+  max-width: 180px;
+  font-size: 12px;
+  z-index: 10000;
+}
